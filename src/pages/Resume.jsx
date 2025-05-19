@@ -7,7 +7,7 @@ import Summary from '@/components/Summary';
 
 export default function Resume() {
   return (
-    <div className="container mx-auto px-5 py-6 md:pt-10 w-full md:w-3/4">
+    <div className="container mx-auto px-6 py-6 md:pt-10 w-full md:w-3/4">
       <Header />
       <Summary />
       <Experience />

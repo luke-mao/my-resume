@@ -13,7 +13,7 @@ export default function Summary() {
         engineering and IT experience to new roles in web development and data science. I am fluent in English and a
         native speaker of Mandarin Chinese.
       </p>
-      <Separator className="mt-5 lg:hidden" />
+      <Separator className="mt-5 lg:hidden lg:mt-10" />
     </section>
   );
 }
