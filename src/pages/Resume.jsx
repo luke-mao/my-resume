@@ -3,11 +3,13 @@ import Header from '@/components/Header';
 import Experience from '@/components/Experience';
 import Education from '@/components/Education';
 import Projects from '@/components/Projects';
+import Summary from '@/components/Summary';
 
 export default function Resume() {
   return (
-    <div className="container mx-auto px-5 md:px-15 py-6 md:py-10">
+    <div className="container mx-auto px-5 py-6 md:pt-10 w-full md:w-3/4">
       <Header />
+      <Summary />
       <Experience />
       <Education />
       <Projects />

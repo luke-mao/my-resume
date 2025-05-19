@@ -13,7 +13,7 @@ export default function Header() {
         </Avatar>
         <div>
           <h1 className="text-2xl font-bold tracking-tight">Luke Mao</h1>
-          <div className="flex flex-col md:flex-row md:gap-2 pt-1">
+          <div className="flex flex-col pt-1 lg:flex-row lg:gap-2">
             <p className="text-muted-foreground text-base">
               Web Developer
             </p>
@@ -31,11 +31,19 @@ export default function Header() {
       {/* Right: Contact Info */}
       <div className="mt-4 md:mt-0 text-base text-muted-foreground">
         <p>📍 Randwick, Sydney NSW</p>
-        <p>📞 0451-985-740</p>
-        <p>✉️ jinjie.luke.mao@gmail.com</p>
+        <p>
+          <a href="tel:0451985740" className="hover:underline">
+            📞 0451-985-740
+          </a>
+        </p>
+        <p>
+          <a href="mailto:jinjie.luke.mao@gmail.com" className="hover:underline">
+            ✉️ jinjie.luke.mao@gmail.com
+          </a>
+        </p>
       </div>
 
-      <Separator className="my-4 md:hidden" />
+      <Separator className="mt-5 lg:hidden" />
     </div>
   );
 }
