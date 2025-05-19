@@ -2,6 +2,7 @@ import React from "react";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
+import UNSWLogo from "@/assets/unsw.png";
 
 const EducationItem = ({ title, date, institution, location, url, logo }) => (
   <Card className="px-3 py-2 rounded-md border border-muted shadow-sm w-[400px]">
@@ -51,7 +52,7 @@ export default function Education() {
           institution="University of New South Wales (UNSW)"
           location="Sydney, Australia"
           url="https://www.unsw.edu.au/"
-          logo="/src/assets/unsw.png"
+          logo={UNSWLogo}
         />
 
         <EducationItem
@@ -60,7 +61,7 @@ export default function Education() {
           institution="University of New South Wales (UNSW)"
           location="Sydney, Australia"
           url="https://www.unsw.edu.au/"
-          logo="/src/assets/unsw.png"
+          logo={UNSWLogo}
         />
       </div>
       <Separator className="mt-5 lg:hidden lg:mt-10" />

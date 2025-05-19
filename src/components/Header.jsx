@@ -1,6 +1,7 @@
 import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
+import Logo from "@/assets/logo.jpg";
 
 export default function Header() {
   return (
@@ -9,7 +10,7 @@ export default function Header() {
         {/* Left: Logo and Name */}
         <div className="flex flex-col md:flex-row items-center gap-4">
           <Avatar className="h-20 w-20">
-            <AvatarImage src="/src/assets/logo.jpg" alt="Luke Mao Logo" />
+            <AvatarImage src={Logo} alt="Luke Mao Logo" />
             <AvatarFallback>LM</AvatarFallback>
           </Avatar>
           <div>
