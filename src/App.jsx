@@ -1,11 +1,8 @@
-import { Button } from "@/components/ui/button"
+import React from 'react'
+import Resume from '@/pages/Resume';
 
-function App() {
+export default function App() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-svh">
-      <Button>Click me</Button>
-    </div>
+    <Resume />
   )
 }
-
-export default App
