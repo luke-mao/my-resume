@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 
 const ProjectItems = ({ title, description, badges, repoLink, demoLink }) => (
-  <Card className="mb-4">
+  <Card className="mb-4 w-[450px]">
     <CardHeader>
       <CardTitle>{title}</CardTitle>
       <CardDescription>{description}</CardDescription>
@@ -40,18 +40,39 @@ const ProjectItems = ({ title, description, badges, repoLink, demoLink }) => (
 const data = [
   {
     title: "Data Compression Algorithms",
-    description: "A C program implementation of Static Huffman, Dynamic Huffman (both FGK and Vitter versions), and LZW algorithm. These algorithms are used to compress and decompress files, demonstrating the principles of data compression.",
-    badges: ["C", "Huffman", "LZW", "File I/O"],
+    description: `A pure C implementation of multiple compression algorithms, including Static Huffman, Dynamic Huffman (FGK and Vitter), and LZW. 
+    The program supports file compression and decompression using custom-built data structures such as trees and linked lists. 
+    This project showcases strong skills in low-level programming, algorithm design, and manual memory management.`,
+    badges: ["C", "Huffman", "LZW", "File I/O", "Data Structures"],
     repoLink: "https://github.com/luke-mao/Data-Compression",
     demoLink: null,
   },
+  {
+    title: "WWCD5 Laptop Comparison Website",
+    description: `A full-stack e-commerce platform developed for the COMP9900 capstone project at UNSW in 2021. 
+    The site allows users to browse and compare laptops, with support for admin and customer roles. 
+    Built with HTML, CSS, and JavaScript on the frontend, and Python Flask RESTX API with SQLite on the backend. 
+    Features include product catalog, customer login, admin dashboard, and a chatbot for user interaction.`,
+    badges: ["JavaScript", "HTML", "CSS", "Flask", "SQLite"],
+    repoLink: "https://github.com/luke-mao/WWCD5_Laptop_Website",
+    demoLink: null,
+  },
+  {
+    title: "Slackr - Slack-Style Chat App (Frontend)",
+    description: `A frontend messaging app built with HTML, CSS, and Vanilla JavaScript, styled with Bootstrap 5 for responsive layout. 
+    Reimplements core features of Slack including channel creation, real-time messaging, emoji reactions, infinite scroll, and profile management. 
+    Uses fragment-based URL routing and communicates with a provided backend API.`,
+    badges: ["JavaScript", "HTML", "CSS", "Bootstrap", "Routing", "DOM"],
+    repoLink: "https://github.com/luke-mao/slackr",
+    demoLink: null,
+  }
 ];
 
 export default function Projects() {
   return (
     <section className="mt-5">
       <h2 className="text-xl font-semibold mb-4">Projects</h2>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-row flex-wrap gap-4">
         {data.map((project, index) => (
           <ProjectItems
             key={index}

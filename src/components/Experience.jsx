@@ -50,26 +50,8 @@ export default function Experience() {
         </CardContent>
       </Card>
 
-      {/* Store Cashier */}
-      <Card className="mb-5">
-        <CardHeader>
-          <TitleWithDate
-            title="Store Cashier"
-            date="Jan 2016 - Dec 2018"
-            company="Friendly Grocer Woolloomooloo"
-            location="Sydney"
-            url="https://friendlygrocer.com.au/friendly-grocer-wooloomooloo"
-          />
-        </CardHeader>
-        <CardContent className="text-base text-muted-foreground">
-          <ul className="list-disc ml-5 space-y-1">
-            <li>Provided customer service and cashier support in a local convenience store environment.</li>
-          </ul>
-        </CardContent>
-      </Card>
-
       {/* Engineering Intern */}
-      <Card>
+      <Card className="mb-5">
         <CardHeader>
           <TitleWithDate
             title="Engineering Intern"
@@ -84,6 +66,24 @@ export default function Experience() {
             <li>Reviewed and updated Standard Operating Procedures (SOPs).</li>
             <li>Assisted in production planning and coordination activities.</li>
             <li>Observed and documented pharmaceutical manufacturing processes.</li>
+          </ul>
+        </CardContent>
+      </Card>
+
+      {/* Store Cashier */}
+      <Card>
+        <CardHeader>
+          <TitleWithDate
+            title="Store Cashier"
+            date="Jan 2016 - Dec 2018"
+            company="Friendly Grocer Woolloomooloo"
+            location="Sydney"
+            url="https://friendlygrocer.com.au/friendly-grocer-wooloomooloo"
+          />
+        </CardHeader>
+        <CardContent className="text-base text-muted-foreground">
+          <ul className="list-disc ml-5 space-y-1">
+            <li>Provided customer service and cashier support in a local convenience store environment.</li>
           </ul>
         </CardContent>
       </Card>
