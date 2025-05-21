@@ -19,14 +19,14 @@ const ProjectItems = ({ title, description, badges, repoLink, demoLink }) => (
       </div>
       <div className="flex gap-3">
         {repoLink && <a href={repoLink} target="_blank" rel="noopener noreferrer">
-          <Button variant="outline" size="sm" className="flex items-center gap-2">
+          <Button variant="outline" size="sm" className="flex items-center gap-2 cursor-pointer">
             <FaGithub className="h-4 w-4" />
             View Code
           </Button>
         </a>}
         {demoLink && (
           <a href={demoLink} target="_blank" rel="noopener noreferrer">
-            <Button size="sm" className="flex items-center gap-2">
+            <Button variant="outline" size="sm" className="flex items-center gap-2 cursor-pointer">
               <FiExternalLink className="h-4 w-4" />
               Live Demo
             </Button>
@@ -44,8 +44,8 @@ const data = [
     The backend dynamically spins up Docker containers to sandbox user-submitted code, ensuring secure, isolated execution with resource limits. 
     Additionally, an AI Tutor powered by OpenAI GPT-4o Mini provides optional step-by-step hints via prompt engineering, helping users debug and understand problems without revealing full answers. 
     Deployed on a Vultr VPS using Docker Compose and Nginx with a custom domain.`,
-    badges: ["Docker", "Sandboxing", "Flask", "React", "GPT-4o-mini", "Deployment"],
-    repoLink: null,
+    badges: ["Docker", "Sandboxing", "Full-stack", "Chatbot", "Deployment"],
+    repoLink: "https://github.com/luke-mao/pycodepractice",
     demoLink: "http://pycodepractice.lukemao.site",
   },
   {
