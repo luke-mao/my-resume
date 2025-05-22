@@ -45,7 +45,7 @@ const data = [
     Additionally, an AI Tutor powered by OpenAI GPT-4o Mini provides optional step-by-step hints via prompt engineering, helping users debug and understand problems without revealing full answers. 
     Deployed on a Vultr VPS using Docker Compose and Nginx with a custom domain.`,
     badges: ["Docker", "Sandboxing", "Full-stack", "Chatbot", "Deployment"],
-    repoLink: "https://github.com/luke-mao/pycodepractice",
+    repoLink: null,
     demoLink: "http://pycodepractice.lukemao.site",
   },
   {
