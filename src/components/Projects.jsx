@@ -49,6 +49,17 @@ const data = [
     demoLink: "http://pycodepractice.lukemao.site",
   },
   {
+    title: "React Games Collection",
+    description: `A set of interactive web games built as single-page applications (SPAs) using React and Tailwind CSS. 
+    This project includes classic games such as Tic Tac Toe, Tower of Hanoi, Snake (Snek), Math Quiz, and Connect 4. 
+    Each game is designed to demonstrate practical React patterns—including state management, context usage, component composition, 
+    and responsive UI—while providing a fun and engaging way to practice frontend skills. 
+    The collection is deployed on Vercel.`,
+    badges: ["React", "SPA", "Tailwind CSS", "Games", "Vercel"],
+    repoLink: "https://github.com/luke-mao/react-games",
+    demoLink: "https://reactgames.lukemao.site",
+  },
+  {
     title: "Data Compression Algorithms",
     description: `A pure C implementation of multiple compression algorithms, including Static Huffman, Dynamic Huffman (FGK and Vitter), and LZW. 
     The program supports file compression and decompression using custom-built data structures such as trees and linked lists. 
