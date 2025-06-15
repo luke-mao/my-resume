@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 
 const ProjectItems = ({ title, description, badges, repoLink, demoLink }) => (
-  <Card className="mb-4 w-[450px]">
+  <Card className="mb-4 w-full max-w-[450px]">
     <CardHeader>
       <CardTitle>{title}</CardTitle>
       <CardDescription>{description}</CardDescription>

@@ -5,7 +5,7 @@ import { Separator } from "@/components/ui/separator";
 import UNSWLogo from "@/assets/unsw.png";
 
 const EducationItem = ({ title, date, institution, location, url, logo }) => (
-  <Card className="px-3 py-2 rounded-md border border-muted shadow-sm w-[400px]">
+  <Card className="px-3 py-2 rounded-md border border-muted shadow-sm w-full max-w-[400px]">
     <div className="flex items-start gap-4">
       <Avatar className="h-12 w-12 mt-1">
         <AvatarImage src={logo} alt={institution} className="object-contain" />
