@@ -46,7 +46,7 @@ const data = [
     Deployed on a Vultr VPS using Docker Compose and Nginx with a custom domain.`,
     badges: ["Docker", "Sandboxing", "Full-stack", "Chatbot", "Deployment"],
     repoLink: "https://github.com/luke-mao/pycodepractice",
-    demoLink: "http://pycodepractice.lukemao.site",
+    // demoLink: "http://pycodepractice.lukemao.site",
   },
   {
     title: "React Games Collection",
