@@ -31,6 +31,35 @@ export default function Experience() {
     <section className="mt-5">
       <h2 className="text-xl font-semibold mb-4">Work Experience</h2>
 
+      {/* Luxury Escapes */}
+      <Card className="mb-5">
+        <CardHeader>
+          <TitleWithDate
+            title="Associate Software Engineer (Full Stack)"
+            date="July 2025 – Present"
+            company="Luxury Escapes"
+            location="Sydney"
+            url="https://www.luxuryescapes.com/"
+          />
+        </CardHeader>
+        <CardContent className="text-base text-muted-foreground">
+          <ul className="list-disc ml-5 space-y-1">
+            <li>
+              Develop and maintain full-stack web applications for the Luxury Escapes Business Traveller (LEBT) team, supporting the business traveller portal.
+            </li>
+            <li>
+              Collaborate with cross-functional teams to deliver new features and enhancements across both backend and frontend services.
+            </li>
+            <li>
+              Work with technologies including Node.js, React.js, TypeScript, PostgreSQL, and AWS.
+            </li>
+            <li>
+              Contribute to code reviews, process improvements, and team documentation.
+            </li>
+          </ul>
+        </CardContent>
+      </Card>
+
       {/* Tutor */}
       <Card className="mb-5">
         <CardHeader>
@@ -69,25 +98,6 @@ export default function Experience() {
           </ul>
         </CardContent>
       </Card>
-
-      {/* Store Cashier */}
-      <Card>
-        <CardHeader>
-          <TitleWithDate
-            title="Store Cashier"
-            date="Jan 2016 - Dec 2018"
-            company="Friendly Grocer Woolloomooloo"
-            location="Sydney"
-            url="https://friendlygrocer.com.au/friendly-grocer-wooloomooloo"
-          />
-        </CardHeader>
-        <CardContent className="text-base text-muted-foreground">
-          <ul className="list-disc ml-5 space-y-1">
-            <li>Provided customer service and cashier support in a local convenience store environment.</li>
-          </ul>
-        </CardContent>
-      </Card>
-
       <Separator className="mt-5 lg:hidden lg:mt-10" />
     </section>
   );
